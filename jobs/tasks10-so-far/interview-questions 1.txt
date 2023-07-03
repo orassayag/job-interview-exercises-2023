@@ -1,0 +1,37 @@
+// We are given an array containing n values that represent a stock price (let's say GOOG).
+// We need to find the best prices to buy and sell a given stock with the biggest earning.
+// Stock price can’t be negative but can be zero.
+// n >= 1
+
+// Input:
+// [4,12,14,19,3,5,6,12,20,5,40]
+// Output:
+//  37
+// (3,40)
+
+// Input:
+// [2,3,5,1,2]
+// Output:
+// 3
+// (2,5)
+
+// Input:
+// [3,5,1,2,4]
+// Output:
+// 3
+// (1,4)
+
+
+
+=====================
+
+// Given a string containing only '(' and ')', return true if it is valid and false otherwise. 
+// Valid examples: 
+// , "()()(())", 
+// invalid examples: 
+// "())()", "(()", ")("
+
+// (())
+
+
+//"(()"

@@ -1,0 +1,31 @@
+Full-Stack Home Task
+Your task is to build a pizza restaurant management system using
+Reactjs and Nodejs.
+Backend
+Your task is to create a pizza restaurant management system.
+The restaurant receives an array of orders (from the frontend), while each order is for one pizza
+that contains an array of toppings. The dough-to-pizza pipeline is:
+Dough Chef -> Topping Chef -> Oven -> Serving -> Done
+When a certain station within the pipeline is completed, the pizza moves to the next one.
+There are no dependencies between the orders in the arrays - when an order is ready to
+be served, it is deployed to the customer.
+The restaurant personnel are:
+● 2 dough chefs - each chef can handle one ball of dough at a time. It takes 7 seconds to
+prepare each ball of dough.
+● 3 topping chefs - each chef can handle 2 toppings at a time. It takes 4 seconds to put
+each topping on the pizza.
+● 1 oven - it takes one pizza at a time and cooks it for 10 seconds.
+● 2 waiters to serve the pizza to the customers - from the kitchen to the table it takes 5
+seconds.
+Frontend
+Your task is to create a UI for the pizza restaurant. This should include the following pages:
+● Orders: Display all orders and the status of each order. The status (which stage of
+preparation the pizza is in - Dough Chef, Topping Chef, Oven, Serving, or Done) will be
+updated by WebSocket from the backend. Pizzas that have read ‘Done’ states will
+display how much time it took from Order to Done.
+● New Order - create a new order - select pizzas and toppings.
+Bonus Tasks
+● Prepare a Docker container (or containers) to run the Frontend and Backend.
+● Save the orders to a DB (MySQL, PostgreSQL, MongoDB) that runs in a Docker
+container.
+● Create a sleek and user-friendly UI.

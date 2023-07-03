@@ -1,0 +1,172 @@
+1 - Mongodb - You have 30 Min for this
+======================================
+
+Imagein you work on an online publishing platform where people can post their blog entries.
+
+The platform is open to obth registed user and non registed gustes
+
+Blog postst are represented in a mongodb database collection of documents names blogPosts with the follofing structure:
+
+
+{
+ "_id": 1,
+"title" : "title1",
+"authors": [
+ { "name": "John Smith", "registered", true },
+ {"name": " Jane Doe", "registred", true },
+...
+],
+"tags": [
+ "tag1",
+"tag2",
+"tag3",
+....
+]
+}
+
+Requirements:
+
+Your task is to compose a query that returns a collection of documents repreesenting aggregated blog posts by tags in such a way that:
+
+1. each tag should represented as a "tag" field.
+2. titles should be represented as an array field named "titles" (the array should consist of titles containing this tag)
+3. There should be one additional field: "size", representing the number of titles in the array;
+4. The final result should be sorted by the number of titles per tag (descending) and then by tag name (ascending).
+5. the final result should be limited to only 10 documents:
+6. blog posts created only by unregistered users should not be included in the result.
+
+An example results appears as the follows:
+
+{"tag": "tag1", "titles": ["title1", "title2", "title3"], "size": 3}
+{"tag": "tag2", "titles": ["title3", "title4"], "size": 2}
+
+2 - React - You have 30 Min for this
+====================================
+
+Consider the following code:
+
+import React from 'react';
+
+const USERS_URL = 'https://example.com/api/users';
+
+export default function Table () {
+  return (
+    <div>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+        //  render elements in tbody
+        </tbody>
+      </table>
+      <section className="pagination">
+        <button className="first-page-btn">first</button>
+        <button className="previous-page-btn">previous</button>
+        <button className="next-page-btn">next</button>
+        <button className="last-page-btn">last</button>
+      </section>
+    </div>
+  );
+};
+
+
+Your task is to implement a React component that renders a table with pagination.
+1. The table has class name table and contains three columns: ID, First Name, and Last Name. It is populated with data that can be fetched from the mocked "https:example.com/api/users" endpoint. The endpoint requires one query parameter: page (with zero based numbering if you do not provide this parameter, the API will return an error). This is an example of a response formatted using JSON:
+
+{
+ "count": 13,
+ "results": [
+ { "id": 1, "firstName": "David", "lastName": "Wallace" },
+{ "id": 2, "firstName": "Sonia", "lastName": "Ross" },
+{ "id" 3, "firstName": "Anthony", "lastName": "Thomson" }
+]
+}
+
+"count" value points to the total number of results, whereas results contains items from the given page. The page size equals 10. The last page of data might be smaller. If a request is sent with the query param "page" larger than the total number of pages, then "results" will be empty.
+2. Initially, the table tbody should be populated with the first page of data.
+3. The pagination section has class name "pagination" and consists of four buttons which are stacked horizontally.
+
+* Clicking the first button navigates to the first page of data, whereas clicking the second button nevigates to the previous page of data. The buttons become disabled after either when the current page is the first page or when a page of data is currently being loaded. The buttons have (respectively) "first-page-btn" and "previous-page-btn" class names.
+* Similarly, clicking the third button navigates to the next page of data, whereas clicking the last button navigates to the last button navigates to the last page of data. The buttons become disabled either when the current page is the last page or when a page of data is currently being loaded. The buttons have (respectively) "next-page-btn" and "last-page-btn" class names.
+* The content of the buttons should be (respectively) "first", "previous", "next", and "last".
+4. While data is being loaded, all buttons should be disabled.
+5. The component should be default export and can be either a function or a class.
+6. Use Fetch API form making requests.
+7. Please remember to use tbody when rendering data.
+
+Assumptions:
+1. Only "import react" is allowed on the top of the code.
+
+
+3 - Node - You have 45 Min for this
+===================================
+
+Your task is to implement a web api that utilizes simple token based autnetication
+You can use only node, express, lodash and uuid packages
+
+The API should support the following requests:
+
+1.
+POST /api/user - Add a user to the database (kept in memory)
+Request body (json):
+* user_id: string
+* login: string
+* password: string
+
+Response: HTTP 400 is the body is empty
+HTTP 201 is the user has been created
+
+2.
+POST /api/authenticate - Authenticate a user
+
+Request body: (json)
+* login: string
+* password: string
+
+RESPONSE:
+HTTP 400 is body is empty
+HTTP 404 if there is no user of the given login name in the database
+HTTP 401 isthe user exists, but the password not correct
+HTTP 200 is the user given correct user nam and password match to:  token: "<uuid>"
+
+3.
+POST /api/logout - log out the user. Requires a token in the request header
+RESPONSE - HTTP 401 if the token is invalid
+HTTP 200 if the user logged out succeasfully. the token that was passed oin become invalid
+
+4.
+POST /api/articles - create an article constisitng of a title, content and the level of its visibility. Only a user with a valid session can create articles
+
+REQUEST BODY (JSON)
+* article_id: string
+* title: string
+* content: string
+visibility: 'public'  |  'private'  |  'logged_in':
+  * public - the article is available publicy
+  * private - the article only accessible of the creator;
+ * logged_in - only users with a valid session can access the article
+
+Response:
+HTTP 400 if the body is empty
+HTTP 401 if the provided token is invalid
+HTTP 201 if the article has been created. the response body can be empty
+
+4.
+GET /api/articles - return a list of articles. The result depends on the token.
+RESPONSE 200 
+* if a valid token is given in the requests's headers, return:
+* all public articles;
+* all articles with visibillity: 'logged_in';
+*the dender's articles;
+*otherwize, return only public articles:
+* An article object is consisited as the following fields: article_id, title, content nad user_id which are all string and the visibillity field which equals one of these values: 'public' 'private' 'logged_in'.
+*the articles might appear in any order
+
+Limitations for APIS:
+1. a token is assosiated to a user. it is considered to be invalid if the token was to log the user out or if it has neever been created as a result of logging the user in
+2. It is possible that the user have multi valid tokens. Sending tow consecutive login requests can be completed succsfully, and the token returnd by the first request does not becomve invalid as a result of the second requets.

@@ -1,0 +1,91 @@
+Hi Amit & Chen!
+How are you guys?
+That's it, it's done. It took me 1.5 days of work, but it's finally done.
+
+Well, it's not actually done, there is a lot more to do but unfortunately I'm out of time (The time I limited myself to dedicate to this project).
+
+I want to thank you for this challenge, it was really fun and more interesting and complex then other home assignments I got recently. :)
+
+So what have I cooked up for you?
+Well:
+
+SERVER: (0.5 day work)
+======
+Node.js
+TypeScript
+MongoDB
+Socket.IO
+Express
+Winston (As a local logger).
+chance (For randomizing workers).
+
+CLIENT: (1 day work)
+=======
+Next.js
+Custom hooks
+Tailwind CSS (My first project with this framework, instead of CSS modules).
+Socket.IO-Client
+@headlessui/react + framer-motion (For the cool animations).
+fontawesome (For the cool fonts).
+chance (For randomizing users).
+sass (To support SCSS).
+yup (Validation).
+Ho, and.. shhh... don't tell Domino's Pizza I took their slices images (CSS Sprite) from them.. It will be our secret. :)
+
+Orders Table:
+
+Orders Modal:
+
+Here is the project on GitHub:
+https://github.com/orassayag/pizza-restaurant
+
+Instructions:
+=============
+1. Since I didn't make it on a container (Lake of time), please make sure to have MongoDB installed on your PC.
+2. Fork the project or download it.
+3. Open the server project.
+4. On the terminal: npm i
+5. Once finished, on terminal: npm run dev
+6. Wait for MongoDB and Socket.IO to be up.
+7. Open the client project.
+8. On the terminal: npm i
+9. Once finished, on terminal: npm run dev
+10. Wait for the client to connect to the server's Socket.IO.
+11. Once the UI is up, click on the red "Order" button and make some yummy pizzas.
+12. Once you click on the "Checkout" button you will start to see all your orders.
+13. Let the show begin and happy testing! :)
+14. If, for some reason, you submitted orders and you don't see them, reload the page. If it's not work, restart the server (& the client if needed).
+
+So what I would do If I have more time for this project?
+Well (Of course, put all on a docker, but besides that):
+
+SERVER:
+=======
+ToDo:
+# All the ToDo points I wrote around the project.
+# Validation on the order from the client (Using Joi for example).
+# Implement a scheduler to retry on all orders that for some reason are in the stage of PENDING or ERROR.
+# Move all settings to config file.
+# Better structure of the TypeScript (Reduce places of "any").
+# Unit test / Integration tests.
+
+CLIENT:
+=======
+ToDo:
+# Add useCallback and useMemo for the relevant places.
+# Load all toppies and sizes from the server.
+# Fix the script bug (In the console).
+# Add loader if not connected yet.
+# If no orders - Display a message of no orders.
+# Move all settings to config file.
+# Add yup Validation to order (User).
+# Handle errors from the server.
+# Add redux-toolkit for better state management.
+# When disconnected and have orders - Display a message.
+# Unit test / Integration tests.
+# Add prop-types for each component.
+# Add the user details modal + Add yup Validation:
+
+
+If you have any questions, please let me know.
+Thanks!

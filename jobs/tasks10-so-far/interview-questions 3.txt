@@ -1,0 +1,32 @@
+// get list of names from https://jsonplaceholder.typicode.com/users, render their names in a list using the Name component.
+// on a click on each name, it should change the 'clicked' prop of the component from false to true.
+
+import React, { useEffect, useState } from 'react';
+import { render } from 'react-dom';
+import Name from './Name';
+import './style.css';
+
+const App = () => {
+
+  return (
+    <>
+    </>
+  );
+};
+
+render(<App />, document.getElementById('root'));
+
+==================
+
+// when the component receives true for the 'clicked' prop, add "(DEAD)" to the end of the name after 3 seconds.
+
+import React from 'react';
+
+export default ({ name, clicked, isDead, ...restProps }) => {
+  
+  return (
+    <div name={name} className={clicked ? 'clicked' : ''} {...restProps}>
+      {name}
+    </div>
+  );
+};

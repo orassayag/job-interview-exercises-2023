@@ -1,0 +1,204 @@
+Icons
+https://codepen.io/orassayag/pen/oNamKqL
+
+Table:
+https://www.youtube.com/watch?v=3TEiC8F8I5g
+
+Shopping:
+https://www.youtube.com/watch?v=jZsJEGK1Dl4
+
+[10:23, 24/05/2023] orassayag: אני מתמיין שם לתפקיד ראש צוות.
+[10:23, 24/05/2023] Tomer Glicksman Baboon Clash Royale: איזה חברה
+[10:23, 24/05/2023] orassayag: לא אגיד
+[10:23, 24/05/2023] Tomer Glicksman Baboon Clash Royale: פשוט מאוד
+[10:23, 24/05/2023] orassayag: מה פשוט בזה
+[10:23, 24/05/2023] Tomer Glicksman Baboon Clash Royale: מה הבעיה
+[10:23, 24/05/2023] orassayag: אתה אוהב להגיד סתם
+[10:23, 24/05/2023] Tomer Glicksman Baboon Clash Royale: לפתוח websocket?
+[10:23, 24/05/2023] orassayag: איך היית ניגש ךזה?
+[10:24, 24/05/2023] orassayag: סוקט זאת לא הבעיה
+[10:24, 24/05/2023] Tomer Glicksman Baboon Clash Royale: איתגרו אותך אה
+[10:24, 24/05/2023] orassayag: איך תדמה Q?
+[10:24, 24/05/2023] Tomer Glicksman Baboon Clash Royale: זה לא ממש queue
+[10:24, 24/05/2023] orassayag: יש דרך אחרת לפתור את זה בלי Q?\
+[10:24, 24/05/2023] orassayag: אז מה?
+[10:24, 24/05/2023] Tomer Glicksman Baboon Clash Royale: זה סוג של מכונת מצבים
+[10:24, 24/05/2023] Tomer Glicksman Baboon Clash Royale: לכל הזמנה יש את הstate
+[10:25, 24/05/2023] orassayag: אבל אתה צריך להחזיק את האובייקט עבור כל אחד בזיכרון
+[10:25, 24/05/2023] orassayag: איך תנהל סקייל של אלפי פניות לפיצות?
+[10:25, 24/05/2023] Tomer Glicksman Baboon Clash Royale: db
+[10:25, 24/05/2023] Israel Chayon Isra Kakakid Srul Clash Royale: הסלייער זה סבבה אבל שאלת אלגוריתם מסכנה לא?
+[10:25, 24/05/2023] orassayag: כן זה סבבה
+[10:25, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אתה מכניס לפי סדר
+[10:25, 24/05/2023] orassayag: כי זה אני אוהב
+[10:25, 24/05/2023] orassayag: מה זה מכניס לdb
+[10:25, 24/05/2023] Israel Chayon Isra Kakakid Srul Clash Royale: אז מה אם אתה אוהב
+[10:25, 24/05/2023] orassayag: זה נראה לך יעמוד בסקייל?
+[10:26, 24/05/2023] Tomer Glicksman Baboon Clash Royale: מכניס לטבלה של הזמנות
+[10:26, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כן
+[10:26, 24/05/2023] Tomer Glicksman Baboon Clash Royale: למה לא
+[10:26, 24/05/2023] orassayag: בלי Q?
+[10:26, 24/05/2023] orassayag: אתה אומר שלא צריך פה Q בכלל?
+[10:26, 24/05/2023] orassayag: ואם הDB נופל?
+[10:26, 24/05/2023] Tomer Glicksman Baboon Clash Royale: למה שייפול
+[10:26, 24/05/2023] orassayag: אני מכין את עצמי לשאלות שהוא ישאל אותי על המבחן
+[10:26, 24/05/2023] orassayag: הוא ישאל אותי למה בחרת בDB
+[10:26, 24/05/2023] orassayag: מה לענות?
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כי זה עדיף על לשמור אובייקט ענקי בזכרון
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: יש גבול
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בקיצור תקשיב
+[10:27, 24/05/2023] orassayag: אגב אתה לא רואה שבשאלת בונוס הוא כתב להשתמש בDB? להשתמש בDB זה בונוס. זה אומר שהפתרון צריך להיות אחרת מDB
+[10:27, 24/05/2023] orassayag: לא?
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: נכנסה הזמנה
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אתה מכניס אותה לdb
+[10:27, 24/05/2023] orassayag: נו
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עם סטטוס pending
+[10:27, 24/05/2023] orassayag: נו
+[10:27, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עכשיו לכאורה יש לך את כל הworkers
+[10:28, 24/05/2023] orassayag: מה זה הworkers
+[10:28, 24/05/2023] Tomer Glicksman Baboon Clash Royale: 2 dough chefs
+[10:28, 24/05/2023] orassayag: אני צריך לתזמן שאחרי X שניות הפיצה תעבור למצב הבא
+[10:28, 24/05/2023] Tomer Glicksman Baboon Clash Royale: 3 topping chefs
+[10:28, 24/05/2023] Tomer Glicksman Baboon Clash Royale: 1 oven
+[10:28, 24/05/2023] orassayag: נו בדיוק
+[10:29, 24/05/2023] Tomer Glicksman Baboon Clash Royale: צריך להבין את הראש של החברה הזאת
+[10:29, 24/05/2023] orassayag: מה זה צריך להבין
+[10:29, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם הם רוצים מיקרו סרביס לכל אחד מהם
+[10:29, 24/05/2023] Tomer Glicksman Baboon Clash Royale: למרות שנראה לי מיותר במטלת בית
+[10:29, 24/05/2023] orassayag: נראה לי מיותר
+[10:29, 24/05/2023] orassayag: שרול זאת עבודת בית קשה
+[10:29, 24/05/2023] orassayag: אל תזלזל
+[10:30, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בקיצור כל פעם שנכנסת הזמנה אתה בודק אם ע-dough chef פנוי
+[10:30, 24/05/2023] Israel Chayon Isra Kakakid Srul Clash Royale: זה מצחיק אותי שהבן אדם שהכי מזלזל בך וביכולות שלך אתה מקשיב לו הכי הרבה והוא עוזר לך
+אני חושב שאתם חברים טובים בסתר 🤣🤣
+[10:30, 24/05/2023] orassayag: איך אני יודע אם השף פנוי?
+[10:30, 24/05/2023] Tomer Glicksman Baboon Clash Royale: שים לו איזה סטייט
+[10:30, 24/05/2023] orassayag: נכנס פניה להכנת פיצה. מכניס אותה לדטה בייס
+[10:30, 24/05/2023] orassayag: מה השלב הבא?
+[10:30, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בגלל שהוא התחנה הראשונה אתה צריך לראות אם הוא פנוי
+[10:30, 24/05/2023] Tomer Glicksman Baboon Clash Royale: פעם ראשונה הוא פנוי
+[10:30, 24/05/2023] orassayag: לבנות set interval?
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אז אתה עכשיו מתחיל process
+[10:31, 24/05/2023] orassayag: זה Q
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אתה יודע מה
+[10:31, 24/05/2023] orassayag: סוג של Q
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עזוב
+[10:31, 24/05/2023] orassayag: לרוץ כל הזמן על interval?
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: לא תמיד
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם אין לך הזמנות
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אז תעצור אותו
+[10:31, 24/05/2023] orassayag: אוקיי
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בקיצור אתה צריך לנהל את האיוונטים
+[10:31, 24/05/2023] orassayag: אוקיי
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: יש איוונט של הזמנה שנכנסת לdb
+[10:31, 24/05/2023] Tomer Glicksman Baboon Clash Royale: יש איוונט של עובד שסיים את העבודה שלו
+[10:31, 24/05/2023] orassayag: אוקיי
+[10:32, 24/05/2023] Tomer Glicksman Baboon Clash Royale: ואיוונט של הזמנה שמשנה את הסטטוס
+[10:32, 24/05/2023] orassayag: הבנתי מה אתה אומר
+[10:32, 24/05/2023] orassayag: הבנתי הבנתי
+[10:32, 24/05/2023] orassayag: הבנתי
+[10:32, 24/05/2023] Tomer Glicksman Baboon Clash Royale: נכנסה הזמנה, בודק אם הבצקן פנוי
+[10:32, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם כן, מתחיל interval של 7 שניות
+[10:32, 24/05/2023] Tomer Glicksman Baboon Clash Royale: יכול להיות שגם timeout רגיל
+[10:32, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כן אני לא חושב שצריך אינטרוול
+[10:32, 24/05/2023] orassayag: תקשיב רגע.
+אז בעצם אני בונה set interval שמאזין לאיוונטים של כל סרביס ובהתאם לזה מעדכן את הסוקט.
+[10:33, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בזמן שהוא מתחיל אתה מעלה קאונטר של dough chefs
+[10:33, 24/05/2023] Tomer Glicksman Baboon Clash Royale: זה אומר כמה תפוסים ברגע נתון
+[10:33, 24/05/2023] orassayag: וכשאני מסיים אני מוריד קאונטר
+[10:33, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אחרי 7 שניות מוריד את הקאונטר + משנה את הסטייט
+[10:33, 24/05/2023] Tomer Glicksman Baboon Clash Royale: של ההזמנה
+[10:34, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עושה update ב-db
+[10:34, 24/05/2023] orassayag: אבל עדיין אני צריך set interval שיבדוק כל הזמן את האיוונטים על הדטה בייס אם נכנסה הזמנה החדשה
+[10:34, 24/05/2023] Tomer Glicksman Baboon Clash Royale: לא צריך set interval
+[10:34, 24/05/2023] Tomer Glicksman Baboon Clash Royale: תקשיב
+[10:34, 24/05/2023] orassayag: או שאתה אומר רק כשנכנסת הזמנה חדשה לדטה בייס לעשות איוונט חדש
+[10:34, 24/05/2023] orassayag: הבנתי
+[10:34, 24/05/2023] orassayag: בכל תהליך בסיום שלו להקפיץ איוונט חדש שיעביר את ההזמנה לשלב הבא
+[10:34, 24/05/2023] orassayag: הבנתי הבנתי
+[10:35, 24/05/2023] orassayag: בכל סיום שלב להקפיץ איוונט שיעביר את הפיצה לשלב הבא
+[10:35, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אחרי 7 שניות יש לך את הפעולות הבאות:
+1. decrement busy counter
+2. update order state in db
+3. query db for oldest pending order
+[10:35, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם מצאת הזמנה ב-pending אתה לוקח אותה וחוזר חלילה
+[10:36, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עושה שוב settimeout
+[10:36, 24/05/2023] Tomer Glicksman Baboon Clash Royale: לא צריך אינטרוול
+[10:36, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עכשיו גם ההזמנה הזאת שעברה לסטייט אחר תעשה אותו דבר בדיוק, רק עם סוג אחר של worker
+[10:36, 24/05/2023] Tomer Glicksman Baboon Clash Royale: תבדוק אם יש פנוי
+[10:37, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם אין לא עושים כלום, ברגע שהוא יסיים הוא יעשה query עם הסטייט שהוא צריך לעבוד עליו
+[10:37, 24/05/2023] Tomer Glicksman Baboon Clash Royale: זה די גנרי מה שקורה, לכל אחד יש קאונטר, סטייט שהוא מחפש, וזמן עבודה
+[10:38, 24/05/2023] Tomer Glicksman Baboon Clash Royale: והזמנה יכולה להכנס לעבודה אצל אחד העובדים ב2 דרכים: או בשלב שינוי סטייט (כולל הכנסת הזמנה חדשה), או שהעובד סיים והוא עכשיו מחפש ב-db
+[10:40, 24/05/2023] orassayag: חכה שניה אני מצייר לך את הFlow המלא:
+1. נכנסת הזמנה ראשונה של פיצה. אני מכניס אותה לדטה בייס.
+2. בודק בדטה בייס אם יש שף פנוי.
+2. אם יש שף פנוי, יוצר set timeout של עבודה של השף - 7 שניות.
+3. בסיום העבודה של השף, מעדכן את הדטה בייס של הפיצה לסטייס הבא, וזורק איוונט שיעביר את הפיצה לשלב הבא.
+4. בשלב הזה מכניסים את הפיצה לתנור - בודק בDB אם התנור פנוי ל2 פיצות - עוד settimeout  אחרי 10 שניות, ושוב מעביר את הפיצה לסטייט הבא בDB, וזורק איוונט לשלב הבא.
+5. בודק בדטה בייס אם יש מלצר פנוי מבין 2 המלצרים. אם יש - עוד settimeout, מעדכן את הדטה בייס, וזורק עוד איוונט.
+[10:40, 24/05/2023] Tomer Glicksman Baboon Clash Royale: 2. אתה לא בודק ב-db, לא חושב שצריך להכניס את המידע על ה-workers ל-dv
+[10:40, 24/05/2023] Tomer Glicksman Baboon Clash Royale: b
+[10:40, 24/05/2023] Tomer Glicksman Baboon Clash Royale: זה אפשרי אבל לא נראה לי שצריך
+[10:40, 24/05/2023] orassayag: מה קורה אם אין שף פנוי / תנור פנוי / מלצר פנוי?
+[10:40, 24/05/2023] orassayag: מה אני עושה?
+[10:40, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כלום
+[10:40, 24/05/2023] orassayag: מה כלום
+[10:40, 24/05/2023] Tomer Glicksman Baboon Clash Royale: ההזמנה מחכה ב-db
+[10:41, 24/05/2023] Tomer Glicksman Baboon Clash Royale: ברגע שנגמר ה-timeout הוא מושך
+[10:41, 24/05/2023] orassayag: איך אני אדע מתי לפנות לDB?
+[10:41, 24/05/2023] orassayag: אוקיי הוא מושך, ואם אין שף פנוי?
+[10:41, 24/05/2023] orassayag: מה עושה?
+[10:41, 24/05/2023] orassayag: הTIMEOUT נגמר
+[10:41, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אבל אין כזה דבר
+[10:41, 24/05/2023] Tomer Glicksman Baboon Clash Royale: timeout נגמר
+[10:41, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אומר שיש עכשיו עובד פנוי
+[10:41, 24/05/2023] orassayag: אני מכניס עכשיו 10 פיצות במקביל.
+[10:41, 24/05/2023] Tomer Glicksman Baboon Clash Royale: מעולה
+[10:41, 24/05/2023] orassayag: אתה אומר
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: והזמנה יכולה להכנס לעבודה אצל אחד העובדים ב2 דרכים: או בשלב שינוי סטייט (כולל הכנסת הזמנה חדשה), או שהעובד סיים והוא עכשיו מחפש ב-db
+[10:42, 24/05/2023] orassayag: אני מתחיל TIMEOUT רק כשיש לי שף / תנור / מלצר פנוי
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כן
+[10:42, 24/05/2023] orassayag: הבנתי
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: ובזמן הזה זה אומר שהוא תפוס
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: נגמר ה-timeout, הוא מפעיל פונקציה נכון?
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אז בפונקציה הזאת תמשוך הזמנה הבאה בתור
+[10:42, 24/05/2023] orassayag: נכון
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: שהוא בעצם dv
+[10:42, 24/05/2023] Tomer Glicksman Baboon Clash Royale: b
+[10:43, 24/05/2023] orassayag: בכל שלב לפנות לDB לקחת את ההזמנה הבאה?
+[10:43, 24/05/2023] orassayag: או רק בשלב הסיום של המלצר?
+[10:43, 24/05/2023] Tomer Glicksman Baboon Clash Royale: בכל שלב
+[10:43, 24/05/2023] orassayag: הבנתי.
+[10:43, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אם יש עובד פנוי תנצל אותו
+[10:43, 24/05/2023] orassayag: זה דיי דומה לQ
+[10:43, 24/05/2023] Tomer Glicksman Baboon Clash Royale: למה שהוא יעמוד מובטל
+[10:43, 24/05/2023] orassayag: נכון.
+[10:43, 24/05/2023] orassayag: אתה רואה זה לא כזה מסובך
+[10:44, 24/05/2023] orassayag: תודה הגיס אני ניגש לעבודה ❤️
+[10:44, 24/05/2023] orassayag: אביא לך לCode Review
+[10:44, 24/05/2023] Tomer Glicksman Baboon Clash Royale: אין לי את הכוחות הנפשיים להסתכל על קוד שלך
+[10:44, 24/05/2023] orassayag: אגב
+[10:45, 24/05/2023] orassayag: בכל שלב אני גם שולח לסוקט לעדכן את הקליינט
+[10:45, 24/05/2023] orassayag: מן הסתם
+[10:45, 24/05/2023] orassayag: נכון?
+[10:45, 24/05/2023] Tomer Glicksman Baboon Clash Royale: כן
+[10:45, 24/05/2023] orassayag: אתה מלאך\
+[10:45, 24/05/2023] orassayag: תודה רבה נשמה
+[10:45, 24/05/2023] Tomer Glicksman Baboon Clash Royale: 🤢
+[10:47, 24/05/2023] orassayag: טוב
+[10:47, 24/05/2023] orassayag: עכשיו תעזור לי לבחור UI שיהמם אותם כדי להציג את ההזמנות ויצירת הזמנה
+[10:48, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עזוב אותי
+[10:48, 24/05/2023] orassayag: איך זה הולך באתרים של הפיצות היום?
+[10:48, 24/05/2023] orassayag: שרול
+[10:48, 24/05/2023] orassayag: תעזור לי
+[10:48, 24/05/2023] Tomer Glicksman Baboon Clash Royale: מי כמוך יודע
+[10:48, 24/05/2023] orassayag: איך מזמינים פיצה דומינוס היום
+[10:48, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עם כל הג׳אנק שאתה אוכל
+[10:50, 24/05/2023] Tomer Glicksman Baboon Clash Royale: יאללה לכו להזדיין אני הולך לעבוד
+[10:51, 24/05/2023] Tomer Glicksman Baboon Clash Royale: הסלעייר שלח לי את הקוד שאוכל להשפיל אותך
+[10:51, 24/05/2023] orassayag: תודה נשמה
+[10:51, 24/05/2023] orassayag: סבבה תודה
+[10:51, 24/05/2023] orassayag: קח פוליגום
+[10:51, 24/05/2023] orassayag: https://stackoverflow.com/questions/22521982/check-if-point-is-inside-a-polygon
+[10:51, 24/05/2023] Tomer Glicksman Baboon Clash Royale: עשו לך review אי פעם בחייך?
+[10:51, 24/05/2023] orassayag: יותר מדי פעמים עשו לי review

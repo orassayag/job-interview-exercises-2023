@@ -1,0 +1,9 @@
+Tasks:
+-Clear the server + Adjust it form the form. *
+-Fix the error on client on the console. *
+-Do all the ToDo in the client/server. *
+-Refactor the client working with component.
+-Make the background image work like uploading an image.
+-Fix logger to log to direcory of the project.
+
+https://codesandbox.io/s/react-videojs-m3u8-forked-1k9yu1?file=/src/App.js

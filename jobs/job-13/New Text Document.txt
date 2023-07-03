@@ -1,0 +1,109 @@
+Table:
+https://www.youtube.com/watch?v=3TEiC8F8I5g
+
+Shopping:
+https://www.youtube.com/watch?v=jZsJEGK1Dl4
+
+/**
+Coding question
+# Context:
+# A user is taking a covid questionnaire, and answers a series of Yes/No questions of wether or not they are experiencing a certain symptom. 
+# Each symptom has an assigned severity.
+# Some combinations of symptoms have an extra concerning combination severity assigned.
+
+# Mission:
+# Implement a method called `get_diagnosis`
+# It will Sum the severity of all the symptoms that the user reported in the chat.
+# If the total severity is higher than the threshold, return true. Otherwise, false.
+# If 2 symptoms are marked as a concerning combination, add their extra interaction severity.
+
+# ---
+
+# Example
+# *******
+
+# IF:
+
+#   Threshold: 6
+
+#   Possible Symptoms:
+#   Fever            -> severity: 3
+#   Vomiting         -> severity: 2
+#   Headache         -> severity: 1
+#   Cough            -> severity: 1
+#   Loss of Taste    -> severity: 2
+
+#   Concerning Combinations:
+#   Fever + Vomiting -> extra interaction severity: 1
+#   Headache + Fever -> extra interaction severity: 3
+#   Cough + Vomiting -> extra interaction severity: 1
+
+# THEN (Example of user responses and the diagnosis):
+
+#   User Response                       Calculation                 Diagnosis
+#   -------------                       -----------                 ---------
+#   Fever + Vomiting                  = 3 + 2 + 1 = 6   !>  6   --> False
+#   Fever + Headache                  = 3 + 1 + 3 = 7    >  6   --> True
+#   Headache + Cough + Loss of Taste  = 1 + 1 + 2 = 4   !>  6   --> False
+
+*/
+
+const symptoms = {
+  'fever': 3,
+  'vomiting': 2,
+  'headache': 1,
+  'cough': 1,
+  'lossOfTaste': 1,
+};
+
+const concerningCombinations = {
+  'fever,vomiting': 1,
+  'fever,headache': 3,
+  'cough,vomiting': 1,
+};
+
+
+
+
+const getDiagnosis = (userSymptoms) => {
+  const totalSeverity = 0;
+  if (!userSymptoms?.length) {
+  	return false;    
+  }
+  userSymptoms.forEach((symptom) => {
+    totalSeverity += symptoms[symptom];
+  });
+
+  for(let i = 0; i < userSymptoms.length; i += 1) {
+  	const symptom = userSymptoms[i];
+    
+    
+  }
+  
+  const combination = userSymptoms.join(',');
+  const extra = concerningCombinations[combination];
+  if (extra) {
+      totalSeverity += extra;
+  }
+  
+  return totalSeverity > 6;
+};
+
+
+
+const exampleUserSymptoms = ['fever', 'cough', 'vomiting'];
+consolg.log(getDiagnosis(exampleUserSymptoms))
+
+
+
+
+
+
+
+
+
+
+
+
+
+

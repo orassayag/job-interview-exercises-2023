@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "text": "Question 1: What is the capital of the United States?",
+    "options": [
+      {
+        "id": 1,
+        "text": "New York"
+      },
+      {
+        "id": 2,
+        "text": "Washington, D.C."
+      },
+      {
+        "id": 3,
+        "text": "Los Angeles"
+      },
+      {
+        "id": 4,
+        "text": "Chicago"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "text": "Question 2: Who was the first Prime Minister of Israel?",
+    "options": [
+      {
+        "id": 1,
+        "text": "Bibi"
+      },
+      {
+        "id": 2,
+        "text": "Peres"
+      },
+      {
+        "id": 3,
+        "text": "Barak"
+      },
+      {
+        "id": 4,
+        "text": "Ben Gurion"
+      }
+    ],
+    "answer": 4
+  },
+  {
+    "id": 3,
+    "text": "Question 3: What is the largest state in the United States by land area?",
+    "options": [
+      {
+        "id": 1,
+        "text": "Texas"
+      },
+      {
+        "id": 2,
+        "text": "Alaska"
+      },
+      {
+        "id": 3,
+        "text": "California"
+      },
+      {
+        "id": 4,
+        "text": "Florida"
+      }
+    ],
+    "answer": 2
+  },
+  {
+    "id": 4,
+    "text": "Question 4: What is the israel's most popular food?",
+    "options": [
+      {
+        "id": 1,
+        "text": "Falafel"
+      },
+      {
+        "id": 2,
+        "text": "Sushi"
+      },
+      {
+        "id": 3,
+        "text": "Pizza"
+      },
+      {
+        "id": 4,
+        "text": "Burger"
+      },
+      {
+        "id": 5,
+        "text": "Test"
+      }
+    ],
+    "answer": 1
+  }
+]
