@@ -1,4 +1,0 @@
-{
-  message: 'Web server initiated successfully: http://localhost:3500',
-  level: 'info'
-}
