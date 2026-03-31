@@ -1,0 +1,181 @@
+Consider the following code:
+
+stage.enum.ts:
+
+enum STAGE {
+  PENDING = 'PENDING',
+  DOUGH = 'DOUGH',
+  TOPPING = 'TOPPING',
+  OVEN = 'OVEN',
+  SERVING = 'SERVING',
+  DONE = 'DONE',
+  ERROR = 'ERROR',
+}
+
+export default STAGE;
+
+============
+
+status.enum.ts:
+
+enum STATUS {
+  PENDING = 'PENDING',
+  PROCESS = 'PROCESS',
+  DONE = 'DONE',
+  ERROR = 'ERROR',
+}
+
+export default STATUS;
+
+============
+
+worker.enum.ts:
+
+enum WORKER {
+  DOUGH_CHEF = 'DOUGH_CHEF',
+  TOPPING_CHEF = 'TOPPING_CHEF',
+  OVEN = 'OVEN',
+  WAITER = 'WAITER',
+}
+
+export default WORKER;
+
+============
+
+order.model.ts:
+
+import mongoose, { Schema, Document } from 'mongoose';
+import STAGE from '../enums/stage.enum';
+
+interface Order extends Document {
+  _id: mongoose.Types.ObjectId;
+  userId: String;
+  stage: STAGE;
+  previousStage: STAGE;
+  status: String;
+  price: Number;
+  comments: String;
+  toppies: String[];
+}
+
+const OrderSchema: Schema<Order> = new Schema<Order>(
+  {
+    _id: mongoose.Schema.Types.ObjectId,
+    userId: {
+      type: String,
+      required: true,
+    },
+    stage: {
+      type: String,
+      enum: STAGE,
+      required: true,
+    },
+    previousStage: {
+      type: String,
+      enum: STAGE,
+    },
+    status: {
+      type: String,
+      required: true,
+    },
+    price: {
+      type: String,
+      required: true,
+    },
+    comments: {
+      type: String,
+    },
+    toppies: {
+      type: [String],
+      required: true,
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
+
+export default mongoose.model<Order>('Order', OrderSchema);
+
+
+============
+
+restaurant.service.ts:
+
+import CONSTANTS from '../config/constants.config';
+import Logger from '../providers/logger.provider';
+import OrderModel from '../bl/models/order.model';
+import STATUS from '../bl/enums/status.enum';
+import STAGE from '../bl/enums/stage.enum';
+import WORKER from '../bl/enums/worker.enum';
+
+class Worker {
+  public type: WORKER;
+  public orderId: String = '';
+  constructor(type: WORKER) {
+    this.type = type;
+  }
+}
+
+export default class RestaurantService {
+  private workers: Worker[];
+
+  constructor() {
+    this.workers = Object.keys(STAGE).reduce((acc, cur) => {
+      const { WORKER_TYPE, WORKERS_COUNT } = CONSTANTS.RESTAURANT.STAGES[cur];
+      acc.push(Array.from({ length: WORKERS_COUNT }, () => new Worker(WORKER_TYPE)));
+      return acc;
+    }, []);
+  }
+
+  public static async processOrder(order: any): Promise<void> {
+    // Check if the user already exists by email - If exists just update the details.
+    // If not exists - Create it to the database.
+    // ToDo: Call the users service.
+
+    // Insert the orders into the database.
+    const newOrder = await new OrderModel({
+      userId: 'sdkfhisdhfiuw',
+      stage: STAGE.PENDING,
+      status: STATUS.PENDING,
+      price: order.price,
+      comments: order.comments,
+      toppies: order.toppies,
+    }).save();
+
+    // Process the order by the stages.
+    await this.processStage(newOrder, STAGE.DOUGH);
+    await this.processStage(newOrder, STAGE.TOPPING);
+    await this.processStage(newOrder, STAGE.OVEN);
+    await this.processStage(newOrder, STAGE.SERVING);
+  }
+
+  private static async processStage(order: OrderModel, stage: STAGE): Promise<void> {
+    try {
+      const { NAME, PREVIOUS_STAGE, WORKER_TYPE, WORK_TIME_SECONDS } =
+        CONSTANTS.RESTAURANT.STAGES[stage];
+      Logger.info(`Process order Id ${order._id} from stage ${PREVIOUS_STAGE} into stage ${NAME}.`);
+      const workerIndex = this.getWorker(WORKER_TYPE);
+      if (workerIndex === -1) {
+        // ToDo: Handle busy case.
+        return;
+      }
+      this.workers[workerIndex].orderId = order._id;
+      await OrderModel.findByIdAndUpdate(order._id, {
+        stage,
+        previousStage: PREVIOUS_STAGE,
+        status: STATUS.PROCESS,
+      });
+      await this.delay(WORK_TIME_SECONDS);
+      await OrderModel.findByIdAndUpdate(order._id, { stage, status: STATUS.DONE });
+    } catch (error) {
+      Logger.info(`Error processing order Id ${order._id} on the ${stage} stage`, error);
+      await OrderModel.findByIdAndUpdate(order._id, { stage: STAGE.ERROR, status: STATUS.ERROR });
+    }
+  }
+
+  private static getWorker(workerType: WORKER): Number | undefined {
+    return this.workers.findIndex((worker) => worker.type === workerType && !worker.orderId);
+  }
+}
+

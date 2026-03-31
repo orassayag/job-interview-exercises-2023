@@ -1,0 +1,51 @@
+Full Stack Developer Challenge
+
+Create an IMDB-like application with:
+
+Welcome to the code challenge.
+
+Overview:
+As we strive to get great candidates, we believe in transparency and set good expectations.
+Hence, we give you that code challenge, which will give you a nice feature we dealt with and we
+want to see the way you think and your code skills.
+
+Main task:
+
+1) Server side application, contains:
+a) Node.js/Go server side application querying  OMDB API (the open movie
+database) which is a third party server side data source.
+i) Create routes according to RESTful API rules (example: GET /movies) to
+get all needed data from the OMDB API.
+2) Frontend application, contains:
+a) Search page - users can search for movies:
+i) Implementation of a search field and a Search button.
+ii) Search requests are fired whenever the user presses a ‘search’ button.
+iii) Disable the search button while the input is empty.
+iv) Movie list - search results will be displayed in a list of movie items.
+v) Movie item - represents a single movie. Design it as you wish.
+○ Displays: poster, title and year.
+○  On click - will redirect to the chosen movie page.
+vi) Add url query params support: [DOMAIN]?q=[MOVIE_NAME] and when
+provided
+show the results for the specific movie name.
+b) Movie Page -  users can view the details of a chosen movie.
+i) can be accessed by clicking a movie item: [DOMAIN]/(:imdbID)
+○ imdbID is included in the API responses.
+○ all the movie data should be shown except: imdbID, type,DVD,
+BoxOffice,Response.
+○ design the page as you wish as long as the user can read and see the
+details.
+
+Data Source -  use  OMDB API - the open movie database
+OMDB API: http://www.omdbapi.com/
+
+Submission: (bonus points)
+● Show the movie page directly by writing the url (paste the url in a new tab)
+● Avoid sending the same request before receiving the first.
+Notes:
+● For any question you can feel free to ask, you are not measured on the questions you
+ask.
+● The exercise should be written using ReactJS for the FrontEnd and using Node.js for
+the Backend.
+● Please provide in the email any details on how to install or access the project, any
+challenges you had and  what you would’ve added if you had more time.

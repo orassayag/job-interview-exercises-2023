@@ -1,0 +1,28 @@
+{
+  "name": "job-interview-exercises-2023",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A Collection of job interviews, and tests, with extra files to exercises with subjects that need to be improved.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/orassayag/job-interview-exercises-2023.git"
+  },
+  "keywords": [
+    "job",
+    "interview",
+    "exercises",
+    "job-interview-exercises-2023",
+    "job-interview"
+  ],
+  "license": "MIT",
+  "author": "Or Assayag <orassayag@gmail.com>",
+  "contributors": [
+    {
+      "name": "Or Assayag",
+      "email": "orassayag@gmail.com",
+      "url": "https://github.com/orassayag"
+    }
+  ],
+  "main": "README.md",
+  "scripts": {}
+}

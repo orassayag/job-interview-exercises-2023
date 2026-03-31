@@ -1,0 +1,17 @@
+1. What's the difference between Git Rebase and Git Merge.
+2. What are XSS attacks by cookies and how to prevent them?
+3. What is CSS Reset? What is it for?
+4. What is the core base difference (By structure who planned it) between PUT and POST requests (Hint: not just for update and create).
+5. Please write examples of private and public properties of an object.
+6. What is the "Callback hell" and how to avoid it?
+7. Describe how web pages worked before Javascript (Before 1997).
+8. Write an example of binding that solves "this" that is undefined.
+9. Write the examples of var x = 1 and x = 1 both in the browser and Node. What will happen in each case? (When writing var x = 1, and writing x = 1 in separate files).
+10. What are the cons and pros of Node? What Dyno comes to solve?
+11. Explain the Event loop in Node.js
+12. You have a database, and 1 row causing the application to be stuck. Please describe the actions one by one how to get to the root of the problem and how to solve it.
+13.
+A. Design a table to keep track of changes of a car table: "Id", "Name", "Model", "Transmission". The Product wants to see the history of changes, who changed it, from what value to which value.
+B. The product can be exported to CSV or other external files. She told you There is an error. She clicked on export and the page became white. Please describe the actions one by one how to get to the root of the problem and how to solve it.
+14. What is the main difference between useCallback and useMemo.
+15. I want to pass property from parent component to child component. Please mention at least 5 ways to do it.

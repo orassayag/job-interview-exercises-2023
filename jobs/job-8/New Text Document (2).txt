@@ -1,0 +1,29 @@
+I need you to build a page in react, include separations to components, use divs, box, grid, and so on.
+The page should be the as following:
+The background color should be gradient blue - top is light and bottom is dark.
+On the middle horizontal and top vertical of the page - place a title "Transcript".
+Blow the title - There will be a form. The corner of the form should be rounded.
+The background color of the form should have opacify half of the page background.
+The form should be built as the following:
+A text with "Enter the details below in order to generate your video".
+Below the text - from right to left, place the following:
+In the first line - First name. Next to it - Last name.
+A row below - On the entire row width - Email address.
+Each on of these components are textboxes.
+Each text box have an icon and the label above the textbox.
+In the next row of the form, please place "upload image" component. It should be built as the following:
+The component have a label "Background image".
+Blow - A rounded white button "Upload". Next to it - An empty Quadrilateral div where the a small thumbnail of the image should be placed as the preview of the uploaded image.
+Below the button - A small progress bar animation (The entire width of the button).
+Next to the this component - On the left - A color picker component. This component should be built as the following:
+Identical to the style of the "Upload" button - But with the "Choose Color" text.
+Next to it,  a Quadrilateral div, and when you click on the button, a dialog box to select the color will open, once the color selected it will be closed and displayed in the Quadrilateral div.
+The next row built with 3 rounded corner dropdowns from right to left:
+A drop down with label of "Format". The options: "HLS", "MP4", "GIF".
+A drop down with label of  "Resolution". Please add screen average Resolutions options of your choise, like 1280X1280, ect)
+A drop down with label of "Quality". The options are "Best", "Better", "Good".
+All labels should be place above the dropdowns.
+In the bottom of the form, in the left side, a rounded white button with the title "Generate".
+Once you click on the button it will be disabled (With disabled style), a small loader should be displayed next to the button.
+
+Thanks!
